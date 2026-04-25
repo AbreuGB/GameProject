@@ -1,0 +1,161 @@
+/* Reset de page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garantia do espaçamento */
+}
+
+/* Página */
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #161C24, #141c26);
+    overflow-x: hidden;
+    color: #F2F2F2;
+    font-family: 'inter';
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #0b1e74;
+    font-family: 'montserrat';
+}
+
+p {
+    color: #ffffff;
+    font-family: 'inter';
+    font-weight: 300;
+}
+
+/* Página index*/
+header {
+    font-family: 'montserrat';
+    font-weight: normal;
+}
+
+header a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Conteúdo do cabeçalho da page */
+header {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #0b1e74;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* Config cabeçalho */
+header .container {
+    /*margem do header*/
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MENU à esquerda */
+header nav {
+    order: 1;
+}
+
+/* LOGO à direita */
+#logo {
+    order: 2;
+}
+
+#logo img {
+    padding: 0;
+    margin: 0;
+    width: 120px;
+}
+
+/* Conteúdo dos tópicos cabeçalho da page */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header nav li {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Conteúdo textual dos tópicos do cabeçalho da page */
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Pseudo-Classe para alteração/estilo dos tópicos cabeçalho da page */
+header a:hover {
+    text-decoration: underline;
+    color: #F2F2F2;
+}
+
+/* Conteúdo na page */
+.container {
+    /* aplicação para espaçamento e view no pc */
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#redireciona-compra-index {
+    text-align: center;
+}
+
+#redireciona-compra-index h3 {
+    color: #9c9797;
+}
+
+#redireciona-compra-index a:hover {
+    color: #0b1e74;
+}
+
+/* ---- PAGE HOME/INDEX */
+main {
+    flex: 1; /* empurra o footer pra baixo */
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container_game {
+    width: 80%;
+    height: 300px;
+    border: 1px dashed #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #0b1e74;
+    color: aliceblue;
+    padding: 3%;
+    text-align: center;
+    margin-top: 15px;
+}
